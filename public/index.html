@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!-- style css -->
+  <link rel="stylesheet" href="./style.css">
+  <title>Movies List</title>
+</head>
+
+<!-- body -->
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Movie List</span>
+  </nav>
+
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 offset-3 float-md-center">
+    <div class="jumbotron text-center">
+      <h1 class="display-2">Movies WatchList!</h1>
+      <p>Add a Movie to the text area below and click Add Movie to save to the list </p>
+      <hr class="my-4">
+    </div>
+  </div>
+
+  <br>
+  <br>
+  
+  <!-- form for movie and comment input -->
+  <form class="text-center"> 
+    <p>
+      <label for="text">Type a Movie</label>
+      <hr>
+      <!-- movie text input -->
+      <input type="text" name="text" id="text">
+      <hr>
+      <label for="comments">Comments</label>
+      <hr>
+      <!-- comment input -->
+      <input type="text" name="comments" id="comments">
+    </p>
+    <!-- add movie button -->
+    <button type="btn" class="btn btn-success" id="addMovie">Add Movie</button>
+  </form>
+
+  <br>
+
+  <!-- added/saved movies will generate here -->
+  <div class="text-center" id="movies"></div>
+
+  <!-- axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <!-- script -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
